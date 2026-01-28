@@ -101,6 +101,16 @@ https://www.jewnity.ca/wp-content/uploads/2026/01/FF_Hoope-For-Hope-Flyer-scaled
 
 ## Changelog
 
+### 2026-01-28 (Update 2)
+- Added Zeffy popup script for Register/Donate buttons (modal popups instead of new tabs)
+- Updated Register button: `zeffy-form-link="https://www.zeffy.com/embed/ticketing/hoop-for-hope-2026-jewnity-sports-and-migdal-ohr-3v3-basketball-tournament-2?modal=true"`
+- Updated Donate button: `zeffy-form-link="https://www.zeffy.com/embed/donation-form/hoop-for-hope--2026-2?modal=true"`
+- Added Campaign embed + Leaderboard embed side by side (new URLs with `-2`)
+- Changed "7 games" to "5 games minimum"
+- Added highlighted "Multiple Divisions" section with emphasis styling
+- Added "Lounge: Non-stop kosher & delicious food all day — breakfast & lunch included!"
+- Replaced text logo with logo.png image
+
 ### 2026-01-28
 - Created landing page with all sections (hero, prize banner, flyer, causes, food/lounge, leaderboard, tournament info, sponsors, CTAs)
 - Deployed to Vercel for WordPress integration
