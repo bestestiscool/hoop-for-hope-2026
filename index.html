@@ -27,6 +27,17 @@
 .h4h-embed-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 @media (max-width: 800px) { .h4h-embed-grid { grid-template-columns: 1fr; } }
 .h4h-highlight { background: linear-gradient(135deg, rgba(247, 147, 30, 0.2) 0%, rgba(247, 147, 30, 0.1) 100%); border: 2px solid #f7931e; padding: 12px 15px; border-radius: 8px; margin: 8px 0; }
+.h4h-sponsor-table { display: block; }
+.h4h-sponsor-cards { display: none; }
+.h4h-sponsor-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 15px; }
+.h4h-sponsor-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.h4h-sponsor-level { color: #c084fc; font-weight: 700; font-size: 1.1rem; }
+.h4h-sponsor-price { color: #f7931e; font-weight: 700; font-size: 1.2rem; }
+.h4h-sponsor-benefit { color: #e0e0e0; margin: 0; line-height: 1.5; }
+@media (max-width: 768px) {
+  .h4h-sponsor-table { display: none; }
+  .h4h-sponsor-cards { display: block; }
+}
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -202,8 +213,9 @@
       <h2 class="h4h-title h4h-center" style="color: #f7931e; font-style: italic;">PARTNER WITH US</h2>
       <p style="text-align: center; font-size: 1.2rem; color: #e0e0e0; margin: 0 0 40px 0; max-width: 700px; margin-left: auto; margin-right: auto;">Be part of a special event that combines sports, community and supports two vital causes: one local and one in Israel.</p>
 
-      <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+      <!-- Desktop Table (hidden on mobile) -->
+      <div class="h4h-sponsor-table">
+        <table style="width: 100%; border-collapse: collapse;">
           <thead>
             <tr style="background: linear-gradient(90deg, #f7931e 0%, #ff6b35 100%);">
               <th style="padding: 15px; text-align: left; color: #1a1a2e; font-weight: 700;">Level</th>
@@ -259,6 +271,73 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <!-- Mobile Cards (hidden on desktop) -->
+      <div class="h4h-sponsor-cards">
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Title Sponsor</span>
+            <span class="h4h-sponsor-price">$18,000</span>
+          </div>
+          <p class="h4h-sponsor-benefit">"The [Your Name] HoopForHope Tournament." Ultimate branding on all jerseys, court center, and marketing.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Event Sponsor</span>
+            <span class="h4h-sponsor-price">$10,000</span>
+          </div>
+          <p class="h4h-sponsor-benefit">High-level logo placement on all jerseys, banners and digital media.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Player Fuel Sponsor</span>
+            <span class="h4h-sponsor-price">$8,000</span>
+          </div>
+          <p class="h4h-sponsor-benefit">Powering every athlete with premium Kosher fuel from tip-off to the final buzzer.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Jerseys Sponsor</span>
+            <span class="h4h-sponsor-price">$5,000</span>
+          </div>
+          <p class="h4h-sponsor-benefit">Your logo on the sleeve or chest of every tournament jersey.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Court Sponsor</span>
+            <span class="h4h-sponsor-price">$3,500</span>
+          </div>
+          <p class="h4h-sponsor-benefit">Signage on the baseline/sideline of a specific court for the duration of the tournament.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Media Sponsor</span>
+            <span class="h4h-sponsor-price">$3,500</span>
+          </div>
+          <p class="h4h-sponsor-benefit">Fuel the tournament's digital legacy by powering professional photography and highlight reels that capture every high-impact moment for the entire community to share.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">MVP & Awards Sponsor</span>
+            <span class="h4h-sponsor-price">$1,800</span>
+          </div>
+          <p class="h4h-sponsor-benefit">Exclusive sponsor of the trophies and the "Player of the Game" awards.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">3 Point & Half-court Contest</span>
+            <span class="h4h-sponsor-price">$1,800</span>
+          </div>
+          <p class="h4h-sponsor-benefit">"The [Your Name] $1800 Shot." Branding during the lunch-time fan & player activation.</p>
+        </div>
+        <div class="h4h-sponsor-card">
+          <div class="h4h-sponsor-card-header">
+            <span class="h4h-sponsor-level">Team Sponsor</span>
+            <span class="h4h-sponsor-price">$500</span>
+          </div>
+          <p class="h4h-sponsor-benefit">Directly subsidizes one team's entry and jersey costs. Your logo on that team's shirt.</p>
+        </div>
       </div>
     </div>
   </section>
