@@ -1,0 +1,520 @@
+/* Hoop For Hope 2026 Landing Page Styles */
+/* Add this to WordPress: Appearance > Customize > Additional CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
+
+.h4h-landing {
+  font-family: 'Urbanist', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.h4h-landing * {
+  box-sizing: border-box;
+}
+
+.h4h-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.h4h-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.h4h-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23ff6b35" stroke-width="0.5" opacity="0.1"/></svg>') repeat;
+  background-size: 200px;
+  opacity: 0.3;
+}
+
+.h4h-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.h4h-logo {
+  max-width: 280px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.h4h-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 15px;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.h4h-tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f7931e;
+  margin: 0 0 10px;
+}
+
+.h4h-subtitle {
+  font-size: 1.1rem;
+  color: #c084fc;
+  margin: 0 0 10px;
+}
+
+.h4h-date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  margin: 0 0 40px;
+}
+
+/* CTA Buttons */
+.h4h-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.h4h-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.h4h-btn-primary {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+}
+
+.h4h-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.6);
+  color: #fff;
+}
+
+.h4h-btn-secondary {
+  background: transparent;
+  color: #c084fc;
+  border: 2px solid #c084fc;
+}
+
+.h4h-btn-secondary:hover {
+  background: #c084fc;
+  color: #1a1a2e;
+  transform: translateY(-3px);
+}
+
+.h4h-btn-outline {
+  background: transparent;
+  color: #f7931e;
+  border: 2px solid #f7931e;
+}
+
+.h4h-btn-outline:hover {
+  background: #f7931e;
+  color: #1a1a2e;
+}
+
+/* Prize Banner */
+.h4h-prize-banner {
+  background: linear-gradient(90deg, #f7931e 0%, #ff6b35 50%, #f7931e 100%);
+  padding: 20px;
+  text-align: center;
+}
+
+.h4h-prize-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.h4h-prize-icon {
+  font-size: 2rem;
+}
+
+.h4h-prize-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Flyer Section */
+.h4h-flyer-section {
+  background: #1a1a2e;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.h4h-flyer-img {
+  max-width: 100%;
+  max-height: 800px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Food Section */
+.h4h-food-section {
+  background: linear-gradient(180deg, #16213e 0%, #1a1a2e 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.h4h-food-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 15px;
+  color: #f7931e;
+}
+
+.h4h-food-desc {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin: 0 0 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h4h-food-image-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.h4h-food-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Leaderboard Section */
+.h4h-leaderboard-section {
+  background: #1a1a2e;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.h4h-leaderboard-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 10px;
+  color: #c084fc;
+}
+
+.h4h-leaderboard-section > .h4h-container > p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 0 0 40px;
+}
+
+.h4h-leaderboard-embed {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 300px;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.h4h-leaderboard-embed iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Info Section */
+.h4h-info-section {
+  background: linear-gradient(180deg, #16213e 0%, #1a1a2e 100%);
+  padding: 80px 20px;
+}
+
+.h4h-info-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 40px;
+  color: #f7931e;
+}
+
+.h4h-welcome-box {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(192, 132, 252, 0.1) 100%);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.h4h-welcome-box h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 15px;
+}
+
+.h4h-welcome-box p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.h4h-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.h4h-info-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.h4h-info-card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #c084fc;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(192, 132, 252, 0.3);
+}
+
+.h4h-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.h4h-info-card li {
+  padding: 8px 0;
+  color: #e0e0e0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.h4h-info-card li::before {
+  content: '●';
+  color: #f7931e;
+  position: absolute;
+  left: 0;
+  font-size: 0.6rem;
+  top: 12px;
+}
+
+.h4h-info-card p {
+  color: #e0e0e0;
+  margin: 0 0 15px;
+}
+
+.h4h-location {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sponsors Section */
+.h4h-sponsors-section {
+  background: #1a1a2e;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.h4h-sponsors-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 40px;
+  color: #fff;
+}
+
+.h4h-sponsors-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.h4h-sponsor-logo {
+  max-width: 200px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.h4h-sponsor-logo:hover {
+  opacity: 1;
+}
+
+.h4h-sponsorship-cta p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 0 0 20px;
+}
+
+/* Final CTA */
+.h4h-final-cta {
+  background: linear-gradient(135deg, #ff6b35 0%, #c084fc 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.h4h-final-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 15px;
+  color: #fff;
+}
+
+.h4h-final-cta p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 40px;
+}
+
+.h4h-final-cta .h4h-btn-primary {
+  background: #1a1a2e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.h4h-final-cta .h4h-btn-primary:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+.h4h-final-cta .h4h-btn-secondary {
+  border-color: #fff;
+  color: #fff;
+}
+
+.h4h-final-cta .h4h-btn-secondary:hover {
+  background: #fff;
+  color: #1a1a2e;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .h4h-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .h4h-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .h4h-tagline {
+    font-size: 1.2rem;
+  }
+
+  .h4h-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  .h4h-prize-text {
+    font-size: 1.1rem;
+  }
+
+  .h4h-food-section h2,
+  .h4h-leaderboard-section h2,
+  .h4h-info-section h2,
+  .h4h-sponsors-section h2,
+  .h4h-final-cta h2 {
+    font-size: 2rem;
+  }
+
+  .h4h-info-card {
+    padding: 20px;
+  }
+
+  .h4h-welcome-box {
+    padding: 20px;
+  }
+
+  .h4h-welcome-box h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h4h-hero {
+    padding: 50px 15px;
+  }
+
+  .h4h-hero h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .h4h-tagline {
+    font-size: 1rem;
+  }
+
+  .h4h-date {
+    font-size: 1rem;
+  }
+
+  .h4h-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h4h-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .h4h-logo {
+    max-width: 200px;
+  }
+}
+
+/* Hide WordPress default padding/margins on this page if needed */
+.page-template-default .h4h-landing {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
