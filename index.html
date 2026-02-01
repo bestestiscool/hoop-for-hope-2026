@@ -37,6 +37,8 @@
 @media (max-width: 768px) {
   .h4h-sponsor-table { display: none; }
   .h4h-sponsor-cards { display: block; }
+  .h4h-charity-grid { grid-template-columns: 1fr !important; }
+  .h4h-charity-grid > div { order: unset !important; }
 }
 </style>
 
@@ -70,9 +72,39 @@
     </div>
   </section>
 
-  <!-- About the Causes -->
-  <section style="padding: 0;">
-    <img src="https://3v3-eta.vercel.app/Migdal%20Ohr%20and%20Jewnity.png" alt="About Migdal Ohr and Jewnity Sports" style="width: 100%; height: auto; display: block;">
+  <!-- About The Charities -->
+  <section class="h4h-section" style="background: #1a1a2e;">
+    <div class="h4h-container">
+      <h2 class="h4h-title h4h-center" style="color: #f7931e;">About The Charities</h2>
+
+      <!-- Migdal Ohr -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-bottom: 60px;" class="h4h-charity-grid">
+        <div>
+          <img src="https://3v3-eta.vercel.app/migdal-ohr.jpeg" alt="Migdal Ohr - Rabbi with children" style="width: 100%; border-radius: 12px;">
+        </div>
+        <div>
+          <h3 style="color: #c084fc; font-size: 1.5rem; margin: 0 0 10px 0;">Migdal Ohr</h3>
+          <p style="color: #f7931e; font-weight: 700; font-size: 1.1rem; margin: 0 0 20px 0;">Supporting and Empowering Vulnerable Children In Israel</p>
+          <p style="color: #e0e0e0; line-height: 1.7; margin: 0 0 15px 0;">Migdal Ohr is Israel's largest social service organization, serving 12,000+ at-risk, underprivileged, and orphaned children and youth.</p>
+          <p style="color: #e0e0e0; line-height: 1.7; margin: 0 0 25px 0;">Founded by Rabbi Yitzhak Dovid Grossman, Migdal Ohr provides housing, education, vocational training, and essential care, giving every child the chance to thrive and build a brighter future.</p>
+          <a href="https://www.migdalohr.ca/about-us" target="_blank" class="h4h-btn" style="color: #c084fc; border: 2px solid #c084fc; padding: 12px 30px;">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Jewnity Sports -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;" class="h4h-charity-grid">
+        <div style="order: 2;">
+          <img src="https://3v3-eta.vercel.app/jewnity-sports.jpeg" alt="Jewnity Sports - Jewish Unity Through Sports" style="width: 100%; border-radius: 12px;">
+        </div>
+        <div style="order: 1;">
+          <h3 style="color: #c084fc; font-size: 1.5rem; margin: 0 0 10px 0;">Jewnity Sports</h3>
+          <p style="color: #f7931e; font-weight: 700; font-size: 1.1rem; margin: 0 0 20px 0;">Jewish Unity & Pride Through Sports</p>
+          <p style="color: #e0e0e0; line-height: 1.7; margin: 0 0 15px 0;">Jewnity Sports exists to unite the Jewish community through sports while fostering Jewish pride—on and off the court.</p>
+          <p style="color: #e0e0e0; line-height: 1.7; margin: 0 0 25px 0;">Our community includes thousands of Jews of all ages and backgrounds participating in leagues, tournaments and events that create meaningful connections, build Jewish identity, and strengthen physical and spiritual well-being. Our vision is to unite communities across North America.</p>
+          <a href="https://jewnity.ca/about" target="_blank" class="h4h-btn" style="color: #c084fc; border: 2px solid #c084fc; padding: 12px 30px;">Learn More</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Flyer Section -->
