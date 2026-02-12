@@ -22,6 +22,14 @@
 .jr-btn-disabled { background: rgba(255,255,255,0.1); color: #666; cursor: not-allowed; }
 .jr-icon { font-size: 2.5rem; margin-bottom: 15px; }
 .jr-coming-text { color: #888; font-size: 0.95rem; }
+.jr-hero-images { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+.jr-hero-images img { max-width: 300px; width: 100%; height: auto; border-radius: 12px; }
+.jr-hero-banner { max-width: 500px; margin: 0 auto; padding: 0 15px; }
+.jr-hero-banner img { width: 100%; height: auto; border-radius: 12px; }
+@media (max-width: 680px) {
+  .jr-hero-images { flex-direction: column; align-items: center; padding: 0 15px; }
+  .jr-hero-images img { max-width: 100%; }
+}
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,13 +46,13 @@
       <h2 style="font-size: 2rem; font-weight: 700; color: #6366f1; margin: 40px 0 30px 0;">Ready to feel like a star!</h2>
 
       <!-- Hero Images -->
-      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-        <img src="https://www.jewnity.ca/wp-content/uploads/2025/11/WhatsApp-Image-2025-12-17-at-16.18.50-e1766703170257.jpeg" alt="Jewnity Sports" style="max-width: 300px; width: 100%; height: auto; border-radius: 12px;">
-        <img src="https://www.jewnity.ca/wp-content/uploads/2024/11/IMG-20251212-WA0028.jpg" alt="Jewnity Sports" style="max-width: 300px; width: 100%; height: auto; border-radius: 12px;">
+      <div class="jr-hero-images">
+        <img src="https://www.jewnity.ca/wp-content/uploads/2025/11/WhatsApp-Image-2025-12-17-at-16.18.50-e1766703170257.jpeg" alt="Jewnity Sports">
+        <img src="https://www.jewnity.ca/wp-content/uploads/2024/11/IMG-20251212-WA0028.jpg" alt="Jewnity Sports">
       </div>
 
-      <div style="max-width: 500px; margin: 0 auto;">
-        <img src="https://www.jewnity.ca/wp-content/uploads/2024/11/Untitled-design.png" alt="Jewnity Sports Design" style="width: 100%; height: auto; border-radius: 12px;">
+      <div class="jr-hero-banner">
+        <img src="https://www.jewnity.ca/wp-content/uploads/2024/11/Untitled-design.png" alt="Jewnity Sports Design">
       </div>
     </div>
   </section>
