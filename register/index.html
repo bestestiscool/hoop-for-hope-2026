@@ -43,8 +43,10 @@
 .jr-section { width: 100% !important; overflow-x: hidden !important; }
 .jr-grid { width: 100% !important; }
 @media (max-width: 680px) {
-  .jr-hero-images img { max-width: 100% !important; width: 100% !important; }
+  .jr-hero-images { flex-direction: row !important; gap: 10px !important; }
+  .jr-hero-images img { max-width: 45% !important; max-height: 200px !important; object-fit: cover !important; }
   .jr-hero-banner { max-width: 100% !important; }
+  .jr-hero-banner img { max-height: 250px !important; object-fit: contain !important; }
   .jr-grid { grid-template-columns: 1fr !important; }
 }
 
