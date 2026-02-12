@@ -2,9 +2,6 @@
 <!-- Host on Vercel, fetch via JS in WordPress -->
 
 <style>
-/* WordPress container fix */
-#jr-container { overflow-x: hidden !important; max-width: 100vw !important; width: 100% !important; }
-
 .jr-page { font-family: 'Urbanist', Arial, sans-serif; color: #fff; line-height: 1.6; background: #0a0a1a; }
 .jr-page * { box-sizing: border-box; }
 .jr-section { padding: 60px 20px; }
@@ -25,30 +22,7 @@
 .jr-btn-disabled { background: rgba(255,255,255,0.1); color: #666; cursor: not-allowed; }
 .jr-icon { font-size: 2.5rem; margin-bottom: 15px; }
 .jr-coming-text { color: #888; font-size: 0.95rem; }
-.jr-hero-images { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
-.jr-hero-images img { max-width: 300px; width: 100%; height: auto; border-radius: 12px; }
-.jr-hero-banner { max-width: 500px; margin: 0 auto; padding: 0 15px; }
-.jr-hero-banner img { width: 100%; height: auto; border-radius: 12px; }
-@media (max-width: 680px) {
-  .jr-hero-images { flex-direction: column; align-items: center; padding: 0 15px; }
-  .jr-hero-images img { max-width: 100%; }
-}
-/* Force no overflow - aggressive */
-.jr-page, .jr-page * { max-width: 100% !important; box-sizing: border-box !important; }
-.jr-page { overflow-x: hidden !important; width: 100% !important; }
-.jr-page img { max-width: 100% !important; width: auto !important; height: auto !important; }
-.jr-hero-images { width: 100% !important; padding: 0 20px !important; box-sizing: border-box !important; }
-.jr-hero-images img { max-width: calc(50% - 15px) !important; }
-.jr-hero-banner { width: 100% !important; padding: 0 20px !important; box-sizing: border-box !important; }
-.jr-section { width: 100% !important; overflow-x: hidden !important; }
-.jr-grid { width: 100% !important; }
-@media (max-width: 680px) {
-  .jr-hero-images { flex-direction: row !important; gap: 10px !important; }
-  .jr-hero-images img { max-width: 45% !important; max-height: 200px !important; object-fit: cover !important; }
-  .jr-hero-banner { max-width: 100% !important; }
-  .jr-hero-banner img { max-height: 250px !important; object-fit: contain !important; }
-  .jr-grid { grid-template-columns: 1fr !important; }
-}
+</style>
 
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -64,13 +38,13 @@
       <h2 style="font-size: 2rem; font-weight: 700; color: #6366f1; margin: 40px 0 30px 0;">Ready to feel like a star!</h2>
 
       <!-- Hero Images -->
-      <div class="jr-hero-images">
-        <img id="img1-whatsapp" src="https://www.jewnity.ca/wp-content/uploads/2025/11/WhatsApp-Image-2025-12-17-at-16.18.50-e1766703170257.jpeg" alt="IMG1-WHATSAPP">
-        <img id="img2-wa0028" src="https://www.jewnity.ca/wp-content/uploads/2024/11/IMG-20251212-WA0028.jpg" alt="IMG2-WA0028">
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+        <img src="https://www.jewnity.ca/wp-content/uploads/2025/11/WhatsApp-Image-2025-12-17-at-16.18.50-e1766703170257.jpeg" alt="Jewnity Sports" style="max-width: 300px; width: 100%; height: auto; border-radius: 12px;">
+        <img src="https://www.jewnity.ca/wp-content/uploads/2024/11/IMG-20251212-WA0028.jpg" alt="Jewnity Sports" style="max-width: 300px; width: 100%; height: auto; border-radius: 12px;">
       </div>
 
-      <div class="jr-hero-banner">
-        <img id="img3-untitled" src="https://www.jewnity.ca/wp-content/uploads/2024/11/Untitled-design.png" alt="IMG3-UNTITLED">
+      <div style="max-width: 500px; margin: 0 auto;">
+        <img src="https://www.jewnity.ca/wp-content/uploads/2024/11/Untitled-design.png" alt="Jewnity Sports Design" style="width: 100%; height: auto; border-radius: 12px;">
       </div>
     </div>
   </section>
