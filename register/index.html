@@ -1,0 +1,135 @@
+<!-- Jewnity Sports Registration Hub -->
+<!-- Host on Vercel, fetch via JS in WordPress -->
+
+<style>
+.jr-page { font-family: 'Urbanist', Arial, sans-serif; color: #fff; line-height: 1.6; background: #0a0a1a; }
+.jr-page * { box-sizing: border-box; }
+.jr-section { padding: 60px 20px; }
+.jr-container { max-width: 1200px; margin: 0 auto; }
+.jr-center { text-align: center; }
+.jr-title { font-size: 2.5rem; font-weight: 800; margin: 0 0 20px 0; color: #fff; }
+.jr-subtitle { font-size: 1.2rem; color: #a0a0a0; margin: 0 0 50px 0; }
+.jr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.jr-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; transition: transform 0.3s, box-shadow 0.3s; }
+.jr-card:hover { transform: translateY(-5px); box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+.jr-card-title { font-size: 1.4rem; font-weight: 700; color: #fff; margin: 0 0 15px 0; }
+.jr-card-status { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; }
+.jr-status-open { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: #fff; }
+.jr-status-soon { background: rgba(251, 191, 36, 0.2); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+.jr-btn { display: inline-block; padding: 14px 32px; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 50px; transition: all 0.3s; }
+.jr-btn-primary { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: #fff; }
+.jr-btn-primary:hover { box-shadow: 0 6px 30px rgba(99, 102, 241, 0.5); transform: translateY(-2px); }
+.jr-btn-disabled { background: rgba(255,255,255,0.1); color: #666; cursor: not-allowed; }
+.jr-icon { font-size: 2.5rem; margin-bottom: 15px; }
+.jr-coming-text { color: #888; font-size: 0.95rem; }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<div class="jr-page">
+
+  <!-- Hero Section -->
+  <section class="jr-section jr-center" style="padding-top: 80px; padding-bottom: 40px;">
+    <div class="jr-container">
+      <h1 class="jr-title">Register for a League</h1>
+      <p class="jr-subtitle">Join the Jewnity Sports community. Find your league and sign up today!</p>
+    </div>
+  </section>
+
+  <!-- Active Registration -->
+  <section class="jr-section" style="padding-top: 0;">
+    <div class="jr-container">
+      <h2 style="font-size: 1.8rem; font-weight: 700; color: #6366f1; margin: 0 0 30px 0;">Open Registration</h2>
+      <div class="jr-grid">
+
+        <!-- Men's Basketball -->
+        <div class="jr-card">
+          <div class="jr-icon">🏀</div>
+          <h3 class="jr-card-title">Men's Basketball</h3>
+          <span class="jr-card-status jr-status-open">Summer 2026</span>
+          <p style="color: #a0a0a0; margin: 0 0 20px 0;">Toronto's premier Jewish men's basketball league. Multiple divisions for all skill levels.</p>
+          <a href="https://app.teamlinkt.com/register/find/jewnitysports4?cid=61787" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
+        </div>
+
+        <!-- Men's Soccer -->
+        <div class="jr-card">
+          <div class="jr-icon">⚽</div>
+          <h3 class="jr-card-title">Men's Soccer</h3>
+          <span class="jr-card-status jr-status-open">Now Open</span>
+          <p style="color: #a0a0a0; margin: 0 0 20px 0;">Competitive and recreational soccer for Jewish men in the GTA.</p>
+          <a href="https://app.teamlinkt.com/register/find/jewnitysports4?cid=51757" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
+        </div>
+
+        <!-- Men's Flag Football -->
+        <div class="jr-card">
+          <div class="jr-icon">🏈</div>
+          <h3 class="jr-card-title">Men's Flag Football</h3>
+          <span class="jr-card-status jr-status-open">Now Open</span>
+          <p style="color: #a0a0a0; margin: 0 0 20px 0;">Fast-paced flag football league for the Jewish community.</p>
+          <a href="https://app.teamlinkt.com/register/find/jewnitysports4?cid=52557" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="jr-section" style="background: rgba(255,255,255,0.02);">
+    <div class="jr-container">
+      <h2 style="font-size: 1.8rem; font-weight: 700; color: #fbbf24; margin: 0 0 30px 0;">Coming Soon</h2>
+      <div class="jr-grid">
+
+        <!-- Men's Hockey -->
+        <div class="jr-card">
+          <div class="jr-icon">🏒</div>
+          <h3 class="jr-card-title">Men's Hockey</h3>
+          <span class="jr-card-status jr-status-soon">Summer 2026</span>
+          <p class="jr-coming-text">Registration opening soon. Stay tuned!</p>
+        </div>
+
+        <!-- Men's Pickleball -->
+        <div class="jr-card">
+          <div class="jr-icon">🏓</div>
+          <h3 class="jr-card-title">Men's Pickleball</h3>
+          <span class="jr-card-status jr-status-soon">Summer 2026</span>
+          <p class="jr-coming-text">Registration opening soon. Stay tuned!</p>
+        </div>
+
+        <!-- High School Boys Basketball -->
+        <div class="jr-card">
+          <div class="jr-icon">🏀</div>
+          <h3 class="jr-card-title">High School Boys Basketball</h3>
+          <span class="jr-card-status jr-status-soon">Summer 2026</span>
+          <p class="jr-coming-text">Registration opening soon. Stay tuned!</p>
+        </div>
+
+        <!-- High School Girls Basketball -->
+        <div class="jr-card">
+          <div class="jr-icon">🏀</div>
+          <h3 class="jr-card-title">High School Girls Basketball</h3>
+          <span class="jr-card-status jr-status-soon">Fall 2026</span>
+          <p class="jr-coming-text">Registration opening soon. Stay tuned!</p>
+        </div>
+
+        <!-- New York 3v3 Tournament -->
+        <div class="jr-card">
+          <div class="jr-icon">🏆</div>
+          <h3 class="jr-card-title">New York 3v3 Tournament</h3>
+          <span class="jr-card-status jr-status-soon">TBA</span>
+          <p class="jr-coming-text">Details coming soon. Stay tuned!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="jr-section jr-center">
+    <div class="jr-container">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin: 0 0 15px 0;">Questions?</h2>
+      <p style="color: #a0a0a0; margin: 0 0 25px 0;">Contact us for more information about our leagues and registration.</p>
+      <a href="mailto:info@jewnitysports.org" class="jr-btn" style="color: #6366f1; border: 2px solid #6366f1;">Contact Us</a>
+    </div>
+  </section>
+
+</div>
