@@ -2,6 +2,9 @@
 <!-- Host on Vercel, fetch via JS in WordPress -->
 
 <style>
+/* WordPress container fix */
+#jr-container { overflow-x: hidden !important; max-width: 100vw !important; width: 100% !important; }
+
 .jr-page { font-family: 'Urbanist', Arial, sans-serif; color: #fff; line-height: 1.6; background: #0a0a1a; }
 .jr-page * { box-sizing: border-box; }
 .jr-section { padding: 60px 20px; }
@@ -30,42 +33,20 @@
   .jr-hero-images { flex-direction: column; align-items: center; padding: 0 15px; }
   .jr-hero-images img { max-width: 100%; }
 }
-/* Force no overflow */
-.jr-page { overflow-x: hidden !important; max-width: 100vw !important; }
-.jr-container { overflow-x: hidden; padding: 0 15px; }
-.jr-page img { max-width: 100% !important; height: auto !important; }
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    var viewport = window.innerWidth;
-    var body = document.body.scrollWidth;
-    var images = document.querySelectorAll('.jr-page img');
-    var results = { viewport: viewport, bodyScroll: body, overflow: body > viewport, images: [] };
-
-    images.forEach(function(img, i) {
-      var rect = img.getBoundingClientRect();
-      if (rect.width > viewport || rect.right > viewport) {
-        results.images.push({ i: i, w: Math.round(rect.width), r: Math.round(rect.right), src: img.src.split('/').pop().substring(0,20) });
-      }
-    });
-
-    var all = document.querySelectorAll('.jr-page *');
-    results.elements = [];
-    all.forEach(function(el) {
-      var r = el.getBoundingClientRect();
-      if (r.right > viewport + 2) {
-        results.elements.push({ tag: el.tagName, cls: el.className.substring(0,20), w: Math.round(r.width), right: Math.round(r.right) });
-      }
-    });
-    results.elements = results.elements.slice(0,10);
-
-    console.log('DIAGNOSTIC:', JSON.stringify(results, null, 2));
-    alert('Viewport: ' + viewport + 'px\nBody scroll: ' + body + 'px\nOverflow: ' + results.overflow + '\nBad images: ' + results.images.length + '\nBad elements: ' + results.elements.length + '\n\nCheck console for details');
-  }, 1500);
-});
-</script>
+/* Force no overflow - aggressive */
+.jr-page, .jr-page * { max-width: 100% !important; box-sizing: border-box !important; }
+.jr-page { overflow-x: hidden !important; width: 100% !important; }
+.jr-page img { max-width: 100% !important; width: auto !important; height: auto !important; }
+.jr-hero-images { width: 100% !important; padding: 0 20px !important; box-sizing: border-box !important; }
+.jr-hero-images img { max-width: calc(50% - 15px) !important; }
+.jr-hero-banner { width: 100% !important; padding: 0 20px !important; box-sizing: border-box !important; }
+.jr-section { width: 100% !important; overflow-x: hidden !important; }
+.jr-grid { width: 100% !important; }
+@media (max-width: 680px) {
+  .jr-hero-images img { max-width: 100% !important; width: 100% !important; }
+  .jr-hero-banner { max-width: 100% !important; }
+  .jr-grid { grid-template-columns: 1fr !important; }
+}
 
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
