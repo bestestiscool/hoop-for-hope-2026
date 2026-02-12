@@ -22,6 +22,12 @@
 .jr-btn-disabled { background: rgba(255,255,255,0.1); color: #666; cursor: not-allowed; }
 .jr-icon { font-size: 2.5rem; margin-bottom: 15px; }
 .jr-coming-text { color: #888; font-size: 0.95rem; }
+.jr-sport-images { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; }
+.jr-sport-images img { width: 300px; height: auto; border-radius: 12px; }
+@media (max-width: 680px) {
+  .jr-sport-images { padding: 0 15px; }
+  .jr-sport-images img { width: 100%; max-width: 100%; }
+}
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -40,10 +46,10 @@
       </div>
 
       <!-- Sport Images -->
-      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
-        <img src="https://3v3-eta.vercel.app/register/jewnity-basketball.png" alt="Jewnity Basketball" style="width: 280px; height: 200px; object-fit: cover; border-radius: 12px;">
-        <img src="https://3v3-eta.vercel.app/register/jewnity-soccer.jpg" alt="Jewnity Soccer" style="width: 280px; height: 200px; object-fit: cover; border-radius: 12px;">
-        <img src="https://3v3-eta.vercel.app/register/jewnity-football.jpeg" alt="Jewnity Football" style="width: 280px; height: 200px; object-fit: cover; border-radius: 12px;">
+      <div class="jr-sport-images">
+        <img src="https://3v3-eta.vercel.app/register/jewnity-basketball.png" alt="Jewnity Basketball">
+        <img src="https://3v3-eta.vercel.app/register/jewnity-soccer.jpg" alt="Jewnity Soccer">
+        <img src="https://3v3-eta.vercel.app/register/jewnity-football.jpeg" alt="Jewnity Football">
       </div>
     </div>
   </section>
