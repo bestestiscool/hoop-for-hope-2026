@@ -21,13 +21,10 @@
 .jr-btn-primary:hover { box-shadow: 0 6px 30px rgba(99, 102, 241, 0.5); transform: translateY(-2px); }
 .jr-btn-disabled { background: rgba(255,255,255,0.1); color: #666; cursor: not-allowed; }
 .jr-icon { font-size: 2.5rem; margin-bottom: 15px; }
+.jr-icon-img { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 15px; }
+.jr-gallery { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-bottom: 50px; }
+.jr-gallery img { width: 100%; max-width: 400px; height: auto; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
 .jr-coming-text { color: #888; font-size: 0.95rem; }
-.jr-sport-images { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; }
-.jr-sport-images img { width: 300px; height: auto; border-radius: 12px; }
-@media (max-width: 680px) {
-  .jr-sport-images { padding: 0 15px; }
-  .jr-sport-images img { width: 100%; max-width: 100%; }
-}
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,21 +32,22 @@
 <div class="jr-page">
 
   <!-- Hero Section -->
-  <section class="jr-section jr-center" style="padding-top: 60px; padding-bottom: 40px;">
+  <section class="jr-section jr-center" style="padding-top: 80px; padding-bottom: 40px;">
     <div class="jr-container">
       <h1 class="jr-title">Register for a League</h1>
       <p class="jr-subtitle">Join the Jewnity Sports community. Find your league and sign up today!</p>
+    </div>
+  </section>
 
-      <!-- Featured Image -->
-      <div style="max-width: 400px; margin: 0 auto 30px auto;">
-        <img src="https://3v3-eta.vercel.app/register/featured-image.png" alt="Jewnity Sports Registration" style="width: 100%; max-height: 500px; object-fit: contain; border-radius: 12px;">
-      </div>
-
-      <!-- Sport Images -->
-      <div class="jr-sport-images">
-        <img src="https://3v3-eta.vercel.app/register/jewnity-basketball.png" alt="Jewnity Basketball">
-        <img src="https://3v3-eta.vercel.app/register/jewnity-soccer.jpg" alt="Jewnity Soccer">
-        <img src="https://3v3-eta.vercel.app/register/jewnity-football.jpeg" alt="Jewnity Football">
+  <!-- Featured Leagues Gallery -->
+  <section class="jr-section" style="padding-top: 0; padding-bottom: 30px;">
+    <div class="jr-container">
+      <div class="jr-gallery">
+        <img src="https://3v3-eta.vercel.app/register/jewnity-basketball.png" alt="Men's Basketball League">
+        <img src="https://3v3-eta.vercel.app/register/jewnity-football.jpeg" alt="Men's Flag Football League">
+        <img src="https://3v3-eta.vercel.app/register/jewnity-soccer.jpg" alt="Men's Soccer League">
+        <img src="https://3v3-eta.vercel.app/register/hockey.jpeg" alt="Men's Hockey League">
+        <img src="https://3v3-eta.vercel.app/register/pickleball.jpeg" alt="Men's Pickleball League">
       </div>
     </div>
   </section>
@@ -69,15 +67,6 @@
           <a href="https://app.teamlinkt.com/register/find/jewnitysports4?cid=61787" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
         </div>
 
-        <!-- Men's Soccer -->
-        <div class="jr-card">
-          <div class="jr-icon">⚽</div>
-          <h3 class="jr-card-title">Men's Soccer</h3>
-          <span class="jr-card-status jr-status-open">Now Open</span>
-          <p style="color: #a0a0a0; margin: 0 0 20px 0;">Competitive and recreational soccer for Jewish men in the GTA.</p>
-          <a href="https://app.teamlinkt.com/register/find/jewnitysports4?cid=51757" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
-        </div>
-
         <!-- Men's Flag Football -->
         <div class="jr-card">
           <div class="jr-icon">🏈</div>
@@ -85,6 +74,24 @@
           <span class="jr-card-status jr-status-open">Now Open</span>
           <p style="color: #a0a0a0; margin: 0 0 20px 0;">Fast-paced flag football league for the Jewish community.</p>
           <a href="https://app.teamlinkt.com/register/find/jewnitysports4?cid=52557" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
+        </div>
+
+        <!-- Men's Hockey -->
+        <div class="jr-card">
+          <div class="jr-icon">🏒</div>
+          <h3 class="jr-card-title">Men's Hockey</h3>
+          <span class="jr-card-status jr-status-open">Now Open</span>
+          <p style="color: #a0a0a0; margin: 0 0 20px 0;">Jewish men's hockey league in the GTA.</p>
+          <a href="https://app.teamlinkt.com/register/find/jewnitysports4" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
+        </div>
+
+        <!-- Men's Pickleball -->
+        <div class="jr-card">
+          <div class="jr-icon">🏓</div>
+          <h3 class="jr-card-title">Men's Pickleball</h3>
+          <span class="jr-card-status jr-status-open">Now Open</span>
+          <p style="color: #a0a0a0; margin: 0 0 20px 0;">Pickleball league for the Jewish community.</p>
+          <a href="https://app.teamlinkt.com/register/find/jewnitysports4" target="_blank" class="jr-btn jr-btn-primary">Register Today!</a>
         </div>
 
       </div>
@@ -97,19 +104,11 @@
       <h2 style="font-size: 1.8rem; font-weight: 700; color: #fbbf24; margin: 0 0 30px 0;">Coming Soon</h2>
       <div class="jr-grid">
 
-        <!-- Men's Hockey -->
+        <!-- Men's Soccer -->
         <div class="jr-card">
-          <div class="jr-icon">🏒</div>
-          <h3 class="jr-card-title">Men's Hockey</h3>
-          <span class="jr-card-status jr-status-soon">Summer 2026</span>
-          <p class="jr-coming-text">Registration opening soon. Stay tuned!</p>
-        </div>
-
-        <!-- Men's Pickleball -->
-        <div class="jr-card">
-          <div class="jr-icon">🏓</div>
-          <h3 class="jr-card-title">Men's Pickleball</h3>
-          <span class="jr-card-status jr-status-soon">Summer 2026</span>
+          <div class="jr-icon">⚽</div>
+          <h3 class="jr-card-title">Men's Soccer</h3>
+          <span class="jr-card-status jr-status-soon">Fall 2026</span>
           <p class="jr-coming-text">Registration opening soon. Stay tuned!</p>
         </div>
 
